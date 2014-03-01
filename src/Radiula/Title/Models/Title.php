@@ -11,8 +11,8 @@ class Title {
 
     public function __construct()
     {
-        $this->layout = Config::get('title::config.layout');
-        $this->segmentSeperator = Config::get('title::config.segmentSeperator');
+        $this->layout = Config::get('title::layout');
+        $this->segmentSeperator = Config::get('title::segmentSeperator');
     }
 
     /**
