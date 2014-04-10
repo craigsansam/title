@@ -17,7 +17,7 @@ Add the following to you `app/config/app.php`
 
     'providers' => [
         '...',
-        'Laracasts\Utilities\UtilitiesServiceProvider'
+        'Radiula\Title\TitleServiceProvider'
     ];
     
     'aliases' => [
