@@ -9,10 +9,10 @@ class Title {
     protected $siteName;
     protected $segments = [];
 
-    public function __construct()
+    public function __construct(Config $config)
     {
-        $this->layout = Config::get('title::layout');
-        $this->segmentSeperator = Config::get('title::segmentSeperator');
+        $this->layout = $config->get('title::layout');
+        $this->segmentSeperator = $config->get('title::segmentSeperator');
     }
 
     /**
