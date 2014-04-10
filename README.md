@@ -1,5 +1,7 @@
 # Radiula Title
 
+[![Build Status](https://travis-ci.org/Radiula/title.svg?branch=master)](https://travis-ci.org/Radiula/title)
+
 ## Install
 
 Pull this package in through Composer.
