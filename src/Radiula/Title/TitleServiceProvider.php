@@ -29,9 +29,9 @@ class TitleServiceProvider extends ServiceProvider {
 	 */
 	protected function bindRepositories()
 	{
-			$this->app->bind('Title', function()
+			$this->app->bind('Title', function($app)
 			{
-				return new \Radiula\Title\Models\Title;
+				return new \Radiula\Title\Models\Title($app['config']);
 			});
 	}
 

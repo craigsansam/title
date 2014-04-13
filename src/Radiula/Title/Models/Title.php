@@ -1,7 +1,5 @@
 <?php namespace Radiula\Title\Models;
 
-use Config;
-
 class Title {
 
     protected $layout;
@@ -9,7 +7,7 @@ class Title {
     protected $siteName;
     protected $segments = [];
 
-    public function __construct(Config $config)
+    public function __construct(\Illuminate\Config\Repository $config)
     {
         $this->layout = $config->get('title::layout');
         $this->segmentSeperator = $config->get('title::segmentSeperator');

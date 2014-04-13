@@ -1,7 +1,5 @@
 <?php
 
-use PHPUnit_Framework_TestCase;
-use Mockery;
 use Radiula\Title\Models\Title;
 
 class TitleTest extends PHPUnit_Framework_TestCase
@@ -10,7 +8,7 @@ class TitleTest extends PHPUnit_Framework_TestCase
 
     public function setUp()
     {
-        $config = Mockery::mock('Config');
+        $config = Mockery::mock('Illuminate\Config\Repository');
 
         $this->getMethod($config, 'layout', '%s | %s');
         $this->getMethod($config, 'segmentSeperator', ' | ');
