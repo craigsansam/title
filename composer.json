@@ -16,8 +16,8 @@
         "phpunit/phpunit": "4.0.14"
     },
     "autoload": {
-        "psr-0": {
-            "Radiula\\Title": "src/"
+        "psr-4": {
+            "Radiula\\Title\\": "src/"
         }
     },
     "minimum-stability": "stable"
