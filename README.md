@@ -8,7 +8,7 @@ Pull this package in through Composer.
 
     {
         "require": {
-        "radiula/title": "0.1.*"
+        "radiula/title": "0.2.*"
     }
     
 
@@ -22,7 +22,7 @@ Add the following to you `app/config/app.php`
     
     'aliases' => [
         '...',
-        'Radiula' => 'Radiula\Facades\Radiula',
+        'Title' => 'Radiula\Title\Facades\Title',
     ];
     
 
