@@ -1,6 +1,6 @@
 <?php
 
-return array(
+return [
     'segmentSeperator' => ' | ',
-    'layout' => '%s | %s'
-);
+    'layout' => '%s | %s',
+];

@@ -9,8 +9,8 @@ class Title {
 
     public function __construct(\Illuminate\Config\Repository $config)
     {
-        $this->layout = $config->get('title::layout');
-        $this->segmentSeperator = $config->get('title::segmentSeperator');
+        $this->layout = $config->get('radiula/title::layout');
+        $this->segmentSeperator = $config->get('radiula/title::segmentSeperator');
     }
 
     /**

@@ -19,7 +19,7 @@ class TitleTest extends PHPUnit_Framework_TestCase
     protected function getMethod($config, $property, $return)
     {
         return $config->shouldReceive('get')
-            ->with("title::{$property}")
+            ->with("radiula/title::{$property}")
             ->andReturn($return);
     }
 
