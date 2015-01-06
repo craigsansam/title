@@ -1,6 +1,6 @@
 # Radiula Title
 
-[![Build Status](https://travis-ci.org/Radiula/title.svg?branch=0.1.1)](https://travis-ci.org/Radiula/title)
+[![Build Status](https://travis-ci.org/radiula/title.svg)](https://travis-ci.org/radiula/title)
 
 ## Install
 
