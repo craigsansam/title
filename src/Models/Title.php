@@ -52,6 +52,6 @@ class Title {
     {
         $segments = implode($this->segmentSeperator, $this->segments);
 
-        return sprintf($this->layout, $segments, $this->siteName);
+        return trim(sprintf($this->layout, $segments, $this->siteName), ' | ');
     }
 }

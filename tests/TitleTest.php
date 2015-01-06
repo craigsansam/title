@@ -29,7 +29,7 @@ class TitleTest extends PHPUnit_Framework_TestCase
 
         $title->siteName('FooBar Site');
         
-        $this->assertSame($title->make(), ' | FooBar Site');
+        $this->assertSame($title->make(), 'FooBar Site');
     }
 
     public function testCanSetOneSegment()
@@ -38,7 +38,7 @@ class TitleTest extends PHPUnit_Framework_TestCase
 
         $title->segment('Foo');
 
-        $this->assertSame($title->make(), 'Foo | ');
+        $this->assertSame($title->make(), 'Foo');
     }
 
     public function testCanSetMultipleSegment()
@@ -47,7 +47,7 @@ class TitleTest extends PHPUnit_Framework_TestCase
 
         $title->segment('Foo', 'Bar', 'Baz');
 
-        $this->assertSame($title->make(), 'Foo | Bar | Baz | ');
+        $this->assertSame($title->make(), 'Foo | Bar | Baz');
     }
 
     public function testCanSetFullTitle()
