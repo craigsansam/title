@@ -8,7 +8,7 @@ Pull this package in through Composer.
 
     {
         "require": {
-        "radiula/title": "0.2.*"
+        "radiula/title": "~0.3"
     }
     
 
