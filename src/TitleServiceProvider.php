@@ -9,7 +9,11 @@ class TitleServiceProvider extends ServiceProvider {
      */
     public function boot()
     {
-        $this->package('radiula/title', 'radiula/title', __DIR__);
+        $this->publishes([
+            __DIR__ . '/config/config.php' => config_path('title.php'),
+        ]);
+
+        $this->mergeConfigFrom(__DIR__ . '/config/config.php', 'title');
     }
 
     /**
@@ -29,7 +33,7 @@ class TitleServiceProvider extends ServiceProvider {
     {
         $this->app->bind('Title', function ($app)
         {
-            return new \Radiula\Title\Models\Title($app['config']);
+            return new Models\Title($app['config']);
         });
     }
 

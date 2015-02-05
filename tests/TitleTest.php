@@ -2,8 +2,8 @@
 
 use Radiula\Title\Models\Title;
 
-class TitleTest extends PHPUnit_Framework_TestCase
-{
+class TitleTest extends PHPUnit_Framework_TestCase {
+
     protected $config;
 
     public function setUp()
@@ -19,7 +19,7 @@ class TitleTest extends PHPUnit_Framework_TestCase
     protected function getMethod($config, $property, $return)
     {
         return $config->shouldReceive('get')
-            ->with("radiula/title::{$property}")
+            ->with("title.{$property}")
             ->andReturn($return);
     }
 
@@ -28,7 +28,7 @@ class TitleTest extends PHPUnit_Framework_TestCase
         $title = new Title($this->config);
 
         $title->siteName('FooBar Site');
-        
+
         $this->assertSame($title->make(), 'FooBar Site');
     }
 
