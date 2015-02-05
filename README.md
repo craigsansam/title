@@ -1,6 +1,7 @@
 # Radiula Title
 
 [![Build Status](https://travis-ci.org/radiula/title.svg)](https://travis-ci.org/radiula/title)
+[![Latest Stable Version](https://poser.pugx.org/radiula/title/v/stable.svg)](https://packagist.org/packages/radiula/title) [![Total Downloads](https://poser.pugx.org/radiula/title/downloads.svg)](https://packagist.org/packages/radiula/title) [![Latest Unstable Version](https://poser.pugx.org/radiula/title/v/unstable.svg)](https://packagist.org/packages/radiula/title) [![License](https://poser.pugx.org/radiula/title/license.svg)](https://packagist.org/packages/radiula/title)
 
 ## Install
 
@@ -8,7 +9,7 @@ Pull this package in through Composer.
 
     {
         "require": {
-        "radiula/title": "0.2.*"
+        "radiula/title": "~0.3"
     }
     
 
