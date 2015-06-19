@@ -34,6 +34,16 @@ class Title {
     }
 
     /**
+     * Returns last added segment
+     *
+     * @return string
+     */
+    public function last()
+    {
+        return end($this->segments);
+    }
+
+    /**
      * Override the layout
      *
      * @return void
