@@ -37,7 +37,7 @@ Add the following to you `config/app.php`
 #### Set one or more segments
 
     Title::segment('Foo', 'Bar');
-
+     
 #### Make the title
 
     Title::make();
@@ -46,6 +46,9 @@ Add the following to you `config/app.php`
 
     Title::layout('%s - %s');
 
+#### Return Last Segment
+
+    Title::last();   
 
 Running the `siteName` and `segment` methods with the above properties (and the default layout), would cause `make` to output the following
 

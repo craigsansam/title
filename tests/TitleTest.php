@@ -50,6 +50,15 @@ class TitleTest extends PHPUnit_Framework_TestCase {
         $this->assertSame($title->make(), 'Foo | Bar | Baz');
     }
 
+    public function testCanReturnLast()
+    {
+        $title = new Title($this->config);
+
+        $title->segment('Foo', 'Bar', 'Baz');
+
+        $this->assertSame($title->last(), 'Baz');
+    }
+
     public function testCanSetFullTitle()
     {
         $title = new Title($this->config);
