@@ -31,7 +31,7 @@ class TitleServiceProvider extends ServiceProvider
      */
     protected function bindRepositories()
     {
-        $this->app->bind('Title', function ($app) {
+        $this->app->singleton('Title', function ($app) {
             return new Models\Title($app['config']);
         });
     }
