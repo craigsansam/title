@@ -1,7 +1,9 @@
-<?php namespace Radiula\Title\Models;
+<?php
 
-class Title {
+namespace Radiula\Title\Models;
 
+class Title
+{
     protected $layout;
     protected $segmentSeperator;
     protected $siteName;
@@ -14,9 +16,7 @@ class Title {
     }
 
     /**
-     * Set the site name
-     *
-     * @return void
+     * Set the site name.
      */
     public function siteName($name)
     {
@@ -24,9 +24,7 @@ class Title {
     }
 
     /**
-     * Set the segments for the page title
-     *
-     * @return void
+     * Set the segments for the page title.
      */
     public function segment()
     {
@@ -34,7 +32,7 @@ class Title {
     }
 
     /**
-     * Returns last added segment
+     * Returns last added segment.
      *
      * @return string
      */
@@ -44,9 +42,7 @@ class Title {
     }
 
     /**
-     * Override the layout
-     *
-     * @return void
+     * Override the layout.
      */
     public function layout($layout)
     {
@@ -54,7 +50,7 @@ class Title {
     }
 
     /**
-     * Build the site title using the segments and title
+     * Build the site title using the segments and title.
      *
      * @return string
      */

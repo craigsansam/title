@@ -2,8 +2,8 @@
 
 use Radiula\Title\Models\Title;
 
-class TitleTest extends PHPUnit_Framework_TestCase {
-
+class TitleTest extends PHPUnit_Framework_TestCase
+{
     protected $config;
 
     public function setUp()
