@@ -14,8 +14,6 @@ class TitleServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__.'/config/config.php' => config_path('title.php'),
         ]);
-
-        $this->mergeConfigFrom(__DIR__.'/config/config.php', 'title');
     }
 
     /**
@@ -23,6 +21,8 @@ class TitleServiceProvider extends ServiceProvider
      */
     public function register()
     {
+        $this->mergeConfigFrom(__DIR__.'/config/config.php', 'title');
+
         $this->bindRepositories();
     }
 
