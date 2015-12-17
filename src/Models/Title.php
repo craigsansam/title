@@ -24,13 +24,15 @@ class Title {
     }
 
     /**
-     * Set the segments for the page title
+     * Set the segments for the page title, removing any that are null
      *
      * @return void
      */
     public function segment()
     {
-        $this->segments = array_merge(func_get_args(), $this->segments);
+        $this->segments = array_merge(array_filter(func_get_args(), function($segment) {
+            return $segment !== null;
+        }), $this->segments);
     }
 
     /**
