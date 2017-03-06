@@ -60,4 +60,27 @@ class Title
 
         return trim(sprintf($this->layout, $segments, $this->siteName), ' | ');
     }
+
+    /**
+     * Get the segments.
+     *
+     * @return array
+     */
+    public function segments()
+    {
+        return $this->segments;
+    }
+
+    /**
+     * Set the segments
+     *
+     * @param $segments
+     * @return $this
+     */
+    public function setSegments($segments)
+    {
+        $this->segments = $segments;
+
+        return $this;
+    }
 }

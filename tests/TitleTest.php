@@ -79,4 +79,25 @@ class TitleTest extends PHPUnit_Framework_TestCase
 
         $this->assertSame($title->make(), 'Foo # FooBar Site');
     }
+
+    public function testCanGetSegments()
+    {
+        $title = new Title($this->config);
+
+        $title->segment('Foo', 'Bar', 'Baz');
+
+        $this->assertSame(['Foo', 'Bar', 'Baz'], $title->segments());
+    }
+
+    public function testCanSetSegments()
+    {
+        $title = new Title($this->config);
+
+        $title->segment('Foo', 'Bar', 'Baz');
+
+        $title->setSegments(['Yoo', 'Hoo']);
+
+        $this->assertSame(['Yoo', 'Hoo'], $title->segments());
+        $this->assertSame($title->make(), 'Yoo | Hoo');
+    }
 }
