@@ -11,7 +11,7 @@ Pull this package in through Composer.
 
     {
         "require": {
-        "radiula/title": "~0.4"
+        "radiula/title": "~0.5"
     }
 
 
@@ -45,6 +45,14 @@ Add the following to you `config/app.php`
 #### Overriding the layout
 
     Title::layout('%s - %s');
+
+#### Getting all segments
+
+    $this->segments();
+
+#### Overriding all segments
+
+    $this->setSegments(['Foo', 'Bar']);
 
 #### Return Last Segment
 
