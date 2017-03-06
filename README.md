@@ -48,11 +48,11 @@ Add the following to you `config/app.php`
 
 #### Getting all segments
 
-    $this->segments();
+    Title::segments();
 
 #### Overriding all segments
 
-    $this->setSegments(['Foo', 'Bar']);
+    Title::setSegments(['Foo', 'Bar']);
 
 #### Return Last Segment
 
