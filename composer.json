@@ -6,7 +6,6 @@
     "laravel",
     "title",
     "page"
-
   ],
   "authors": [
     {
@@ -17,7 +16,7 @@
   "license": "MIT",
   "require": {
     "php": ">=5.4.0",
-    "illuminate/support": "~5.0"
+    "illuminate/support": "^5.0|^6.0"
   },
   "require-dev": {
     "mockery/mockery": "~0.9.",
@@ -27,6 +26,5 @@
     "psr-4": {
       "Radiula\\Title\\": "src/"
     }
-  },
-  "minimum-stability": "stable"
+  }
 }
